@@ -1,0 +1,32 @@
+.slide-text {
+    background-image: linear-gradient(180deg, #121212 0%, #12121200 100%);
+    background-size: contain;
+}
+
+.button-primary {
+    color: #FFF;
+    background-color: #F85559;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    padding: 20px 30px;
+    margin-top: 32px;
+
+}
+
+@media screen and (max-width:576px) {
+    .navbar-all {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+    .drop-menu {
+        margin-left: 100px;
+    }
+}

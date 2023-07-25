@@ -13,13 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8af2b4b44b.js" crossorigin="anonymous"></script>
 </head>
-<body class="container mx-auto px-4">
+<body class="container lg:mx-auto px-4 mx-10 ">
     <!-- Header section -->
     <header>
-        <div class="navbar bg-[#F85559] rounded-full mt-2 flex items-center justify-between">
+        <div class="navbar navbar-all lg:bg-[#F85559] rounded-full mt-2 flex items-center justify-between">
 
-            <div class="  hidden lg:flex text-white ">
-                <ul class="menu menu-horizontal px-1 text-lg">
+            <div class="nav-menu invisible md:visible lg:visible  text-white ">
+                <ul class=" menu menu-horizontal  text-lg">
                     <li><a>Home</a></li>
                     <li><a>About us</a></li>
                     <li><a>Shops</a></li>
@@ -27,30 +27,28 @@
                 </ul>
             </div>
 
-            <div class="">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About us</a></li>
-                        <li><a>Shops</a></li>
-                        <li><a>All fruits</a></li>
-                    </ul>
-                </div>
-                <div class="flex items-center">
-                    <img src="./images/logo.png" alt="">
-                    <a class="btn btn-ghost normal-case text-3xl text-white">FruitBrust</a>
-                </div>
+            <div class=" drop-menu dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Shops</a></li>
+                    <li><a>All fruits</a></li>
+                </ul>
             </div>
 
-            <div class=" w-10 lg:w-auto bg-white rounded-full">
+            <div class=" nav-title  flex items-center">
+                <img src="./images/logo.png" alt="">
+                <a class="btn btn-ghost normal-case text-3xl lg:text-white">FruitBrust</a>
+            </div>
+            <div class="lg:navbar-end invisible md:visible lg:visible w-10 lg:w-auto bg-white rounded-full">
                 <input type=" text" placeholder="Search" class="input border-none rounded-full" />
                 <i class="fa-solid fa-magnifying-glass px-5 "></i>
             </div>
@@ -59,6 +57,86 @@
 
     <!-- Main section -->
     <main>
+        <!-- Banner section -->
+        <section class="mt-[50px] relative">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item whole-slide  relative w-full">
+                    <img class="slide-image" src="./images/banner1.png" alt="First Slide" class="w-full" />
+                    <div
+                        class="absolute slide-text  flex items-center justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <div class=" text-white text-center ">
+                            <h3 class=" text-sm lg:text-7xl md:lg:text-7xl">Exotic tastes at your doorstep</h3>
+                            <p class="md:text-xl lg:text-xl mt-2">We supply highly quality organic products</p>
+                            <button class="button-primary">Shop Now</button>
+                        </div>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/banner2.png" alt="Second Slide" class="w-full" />
+                    <div
+                        class="absolute flex items-center justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <div class=" slide-text text-white text-center ">
+                            <h3 class="lg:text-7xl md:lg:text-7xl">Exotic tastes at your doorstep</h3>
+                            <p class="md:text-xl lg:text-xl mt-2">We supply highly quality organic products</p>
+                            <button class="button-primary">Shop Now</button>
+                        </div>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/banner3.png" alt="Third Slide" class="w-full" />
+                    <div
+                        class="absolute flex items-center justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <div class=" slide-text text-white text-center ">
+                            <h3 class="lg:text-7xl md:lg:text-7xl">Exotic tastes at your doorstep</h3>
+                            <p class="md:text-xl lg:text-xl mt-2">We supply highly quality organic products</p>
+                            <button class="button-primary">Shop Now</button>
+                        </div>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/banner4.png" alt="Forth Slide" class="w-full" />
+                    <div
+                        class="absolute flex items-center justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <div class=" slide-text text-white text-center ">
+                            <h3 class="lg:text-7xl md:lg:text-7xl">Exotic tastes at your doorstep</h3>
+                            <p class="md:text-xl lg:text-xl mt-2">We supply highly quality organic products</p>
+                            <button class="button-primary">Shop Now</button>
+                        </div>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="invisible lg:visible md:visible absolute top-[550px]  w-11/12 rounded-lg flex items-center justify-between bg-white mx-16">
+                <div class="text-center p-[50px]">
+                    <img src="./images/fruit1.png" class="img-fluid rounded-top" alt="">
+                    <h3>Strawberry</h3>
+                </div>
+                <div class="text-center p-[50px]">
+                    <img src="./images/fruit2.png" class="img-fluid rounded-top" alt="">
+                    <h3>Orange</h3>
+                </div>
+                <div class="text-center p-[50px]">
+                    <img src="./images/fruit3.png" class="img-fluid rounded-top" alt="">
+                    <h3>Mango</h3>
+                </div>
+                <div class="text-center p-[50px]">
+                    <img src="./images/fruit4.png" class="img-fluid rounded-top" alt="">
+                    <h3>Strawberry</h3>
+                </div>
+                <div class="text-center p-[50px]">
+                    <img src="./images/fruit5.png" class="img-fluid rounded-top" alt="">
+                    <h3>pomgradet</h3>
+                </div>
+            </div>
+        </section>
 
     </main>
 
