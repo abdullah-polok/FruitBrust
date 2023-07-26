@@ -1,3 +1,10 @@
+.navbar-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .whole-slide {
     background: rgba(18, 18, 18, 0.70);
 }
@@ -62,7 +69,67 @@
     }
 
     .nav-title {
-        /* margin-left: 10px; */
+        margin-left: 0;
+    }
+
+    .drop-menu {
+        margin-left: 100px;
+    }
+
+    .dealAndtime {
+        flex-direction: column;
+    }
+
+    .deal-title {
+        text-align: center;
+    }
+
+    .deal-description {
+        text-align: center;
+    }
+
+    .timer {
+        text-align: center;
+    }
+
+    .team-title {
+        text-align: center;
+    }
+
+    .team-description {
+        text-align: center;
+        padding: 30px;
+    }
+
+    .chooseUs1 {
+        flex-direction: column-reverse;
+    }
+
+    .chooseOption {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .choose-details {
+        text-align: center;
+    }
+
+    .chooseOption2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+}
+
+
+@media screen and (min-width:577px) and (max-width:928px) {
+    .navbar-all {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .nav-title {
+        margin-left: 0;
     }
 
     .drop-menu {
