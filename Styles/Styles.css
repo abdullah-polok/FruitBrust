@@ -45,6 +45,17 @@
     background: #FFF;
 }
 
+.team-section {
+    background-image: url('../images/banner2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.whole-team {
+    border-radius: 10px;
+    background: rgba(18, 18, 18, 0.70);
+}
+
 @media screen and (max-width:576px) {
     .navbar-all {
         display: flex;
