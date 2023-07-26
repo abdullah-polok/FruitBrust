@@ -15,15 +15,16 @@
 </head>
 <body>
     <!-- Header section -->
-    <header class="container lg:mx-auto lg:px-4 md:px-4 px-1 ">
-        <div class="navbar navbar-all lg:bg-[#F85559] rounded-full mt-2 flex items-center justify-between">
+    <header class="container lg:mx-auto lg:px-4 md:px-4 px-5 ">
+        <nav
+            class="navbar-all lg:bg-[#F85559] rounded-full mt-2 flex items-center  justify-center lg:justify-between px-2">
 
             <div class="nav-menu invisible md:visible lg:visible  text-white ">
-                <ul class=" menu menu-horizontal  text-lg">
-                    <li><a>Home</a></li>
-                    <li><a>About us</a></li>
-                    <li><a>Shops</a></li>
-                    <li><a>All fruits</a></li>
+                <ul class="flex items-center justify-between text-lg">
+                    <li class="mr-8"><a>Home</a></li>
+                    <li class="mr-8"><a>About us</a></li>
+                    <li class="mr-8"><a>Shops</a></li>
+                    <li class="mr-8"><a>All fruits</a></li>
                 </ul>
             </div>
 
@@ -44,22 +45,24 @@
                 </ul>
             </div>
 
-            <div class=" nav-title  flex items-center">
-                <img src="./images/logo.png" alt="">
+            <div class=" nav-title  flex items-center ">
+                <img class="w-full" src="./images/logo.png" alt="">
                 <a class="btn btn-ghost normal-case text-3xl lg:text-white">FruitBrust</a>
             </div>
-            <div class="lg:navbar-end invisible md:visible lg:visible w-10 lg:w-auto bg-white rounded-full">
+
+            <div class=" invisible md:visible lg:visible w-10 lg:w-auto bg-white rounded-full">
                 <input type=" text" placeholder="Search" class="input border-none rounded-full" />
                 <i class="fa-solid fa-magnifying-glass px-5 "></i>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- Main section -->
-    <main class="container lg:mx-auto lg:px-4 md:px-4 px-1 ">
+    <main class="container lg:mx-auto lg:px-4 md:px-4 px-5 ">
         <!-- Banner section -->
-        <section class="mt-[50px] relative">
-            <div class="carousel whole-slide w-full">
+        <section class="mt-[50px] relative ">
+
+            <div class="carousel whole-slide w-full rounded-lg">
                 <div id="slide1" class="carousel-item   relative w-full">
                     <img class="slide-image" src="./images/banner1.png" alt="First Slide" class="w-full" />
                     <div
@@ -139,6 +142,7 @@
                         <h3>pomgradet</h3>
                     </div>
                 </div>
+            </div>
         </section>
 
         <!-- Deal of the day section -->
@@ -319,6 +323,97 @@
                 </div>
             </div>
         </section>
+
+
+
+        <!-- Choose us section -->
+        <section class="mt-[150px]">
+            <div class="text-center">
+                <h3 class="text-5xl font-bold">Why Choose Us</h3>
+                <p class="text-lg mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece
+                    of
+                    classical Latin
+                    literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row md:flex-row items-center justify-between mt-12">
+                <div class="chooseUs1 flex  items-center justify-between">
+                    <div class="lg:mr-12">
+                        <div class="chooseOption flex items-center justify-between mb-0 ">
+                            <div class="bg-gray-200 rounded-full mr-6">
+                                <i class="fa-solid fa-users p-5 rounded-full" style="color: #acb1b9;"></i>
+                            </div>
+                            <div class="choose-details">
+                                <h3 class=" text-xl font-bold">Dedicated Team</h3>
+                                <hr>
+                                <p class="text-lg">Professional employees are there for you to pick the most amazing and
+                                    fresh fruits.</p>
+                            </div>
+                        </div>
+                        <div class="chooseOption flex items-center justify-between mt-6 mb-0 ">
+                            <div class="bg-gray-200 rounded-full mr-6">
+                                <i class="fa-solid fa-heart-circle-bolt p-5 rounded-full" style="color: #acb1b9;"></i>
+                            </div>
+                            <div class="choose-details">
+                                <h3 class="text-xl font-bold">Fresh is Best</h3>
+                                <hr>
+                                <p class="text-lg">Professional employees are there for you to pick the most amazing and
+                                    fresh fruits.</p>
+                            </div>
+                        </div>
+                        <div class="chooseOption flex items-center justify-between mt-6 ">
+                            <div class="bg-gray-200 rounded-full mr-6">
+                                <i class="fa-solid fa-gift p-5 rounded-full" style="color: #acb1b9;"></i>
+                            </div>
+                            <div class="choose-details">
+                                <h3 class="text-xl font-bold">Gift Certificates</h3>
+                                <hr>
+                                <p class="text-lg">Professional employees are there for you to pick the most amazing and
+                                    fresh fruits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10 md:mr-12 lg:mr-12 ">
+                        <img src="./images/whychoose1.png" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="chooseOption2 flex items-center justify-between mb-0 mt-6 ">
+                        <div class="md:text-right lg:text-right choose-details mr-6">
+                            <h3 class="text-xl font-bold">Integrated Supplier</h3>
+                            <hr>
+                            <p class="text-lg">Professional employees are there for you to pick the most amazing and
+                                fresh fruits.</p>
+                        </div>
+                        <div class="bg-gray-200 rounded-full">
+                            <i class="fa-solid fa-apple-whole p-5 rounded-full" style="color: #acb1b9;"></i>
+                        </div>
+                    </div>
+                    <div class="chooseOption2 flex items-center justify-between mt-6 mb-0 ">
+                        <div class="md:text-right lg:text-right choose-details mr-6">
+                            <h3 class="text-xl font-bold">Sustainable Practice</h3>
+                            <hr>
+                            <p class="text-lg">Professional employees are there for you to pick the most amazing and
+                                fresh fruits.</p>
+                        </div>
+                        <div class="bg-gray-200 rounded-full ">
+                            <i class="fa-solid fa-ice-cream p-5 rounded-full" style="color: #acb1b9;"></i>
+                        </div>
+                    </div>
+                    <div class="chooseOption2 flex items-center justify-between mt-6 ">
+                        <div class="md:text-right lg:text-right choose-details mr-6">
+                            <h3 class="text-xl font-bold">The Benefits Only</h3>
+                            <hr>
+                            <p class="text-lg">Professional employees are there for you to pick the most amazing and
+                                fresh fruits.</p>
+                        </div>
+                        <div class="bg-gray-200 rounded-full ">
+                            <i class="fa-solid fa-thumbs-up p-5 rounded-full" style="color: #acb1b9;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -328,26 +423,31 @@
             <img class="" src="./images/logo.png" alt="">
             <h3 class="text-5xl">FruitBrust</h3>
         </div>
-        <div class="text-white flex  flex-row items-center justify-center mb-0 mt-14 mx-2 ">
-            <h3 class="mr-[40px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">Home</h3>
-            <h3 class="mr-[40px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">About us</h3>
-            <h3 class="mr-[40px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">Shop </h3>
-            <h3 class="mr-[40px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">All fruit</h3>
-            <h3 class="mr-[40px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">Support</h3>
-            <h3 class="mr-[40px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">My Account</h3>
+        <div class="text-white flex  flex-row items-center justify-center mb-0 mt-14 px-10 ">
+            <h3 class="ml-[30px] mr-[30px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">Home</h3>
+            <h3 class="mr-[30px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">About us</h3>
+            <h3 class="mr-[30px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">Shop </h3>
+            <h3 class="mr-[30px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">All fruit</h3>
+            <h3 class="mr-[30px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">Support</h3>
+            <h3 class="mr-[30px] md:mr-[60px] lg:mr-[60px] text-xs md:text-lg lg:text-lg">My Account</h3>
         </div>
-        <div class=" flex items-center justify-center mt-14">
-            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook mr-[40px] text-4xl"
+        <div class=" flex items-center justify-center mt-14 ">
+            <a href="https://www.facebook.com"><i
+                    class="fa-brands fa-facebook mr-[40px] text-2xl md:text-4xl lg:text-4xl"
                     style="color: #fff;"></i></a>
-            <a href="https://twitter.com/"><i class="fa-brands fa-twitter mr-[40px] text-4xl"
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter mr-[40px] text-2xl md:text-4xl lg:text-4xl"
                     style="color: #fff;"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube mr-[40px] text-4xl"
+            <a href="https://www.youtube.com/"><i
+                    class="fa-brands fa-youtube mr-[40px] text-2xl md:text-4xl lg:text-4xl"
                     style="color: #fff;"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in mr-[40px] text-4xl"
+            <a href="https://www.linkedin.com/"><i
+                    class="fa-brands fa-linkedin-in mr-[40px] text-2xl md:text-4xl lg:text-4xl"
                     style="color: #ffffff;"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram mr-[40px] text-4xl"
+            <a href="https://www.instagram.com/"><i
+                    class="fa-brands fa-instagram mr-[40px] text-2xl md:text-4xl lg:text-4xl"
                     style="color: #ffffff;"></i></a>
-            <a href="https://www.apple.com/"><i class="fa-brands fa-apple text-4xl" style="color: #ffffff;"></i></a>
+            <a href="https://www.apple.com/"><i class="fa-brands fa-apple text-2xl md:text-4xl lg:text-4xl"
+                    style="color: #ffffff;"></i></a>
         </div>
 
     </footer>

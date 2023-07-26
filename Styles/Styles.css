@@ -57,13 +57,13 @@
 
 @media screen and (max-width:576px) {
     .navbar-all {
-        display: flex;
         flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
-
+    .nav-title {
+        /* margin-left: 10px; */
+    }
 
     .drop-menu {
         margin-left: 100px;
@@ -92,5 +92,24 @@
     .team-description {
         text-align: center;
         padding: 30px;
+    }
+
+    .chooseUs1 {
+        flex-direction: column-reverse;
+    }
+
+    .chooseOption {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .choose-details {
+        text-align: center;
+    }
+
+    .chooseOption2 {
+        flex-direction: column-reverse;
+        justify-content: center;
+
     }
 }
