@@ -68,4 +68,29 @@
     .drop-menu {
         margin-left: 100px;
     }
+
+    .dealAndtime {
+        flex-direction: column;
+    }
+
+    .deal-title {
+        text-align: center;
+    }
+
+    .deal-description {
+        text-align: center;
+    }
+
+    .timer {
+        text-align: center;
+    }
+
+    .team-title {
+        text-align: center;
+    }
+
+    .team-description {
+        text-align: center;
+        padding: 30px;
+    }
 }
