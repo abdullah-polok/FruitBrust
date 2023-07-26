@@ -1,6 +1,5 @@
-.slide-text {
-    background-image: linear-gradient(180deg, #121212 0%, #12121200 100%);
-    background-size: contain;
+.whole-slide {
+    background: rgba(18, 18, 18, 0.70);
 }
 
 .button-primary {
