@@ -63,9 +63,19 @@
 }
 
 @media screen and (max-width:576px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        max-width: 576px;
+        overflow-x: hidden;
+    }
+
     .navbar-all {
         flex-direction: row-reverse;
         justify-content: flex-end;
+        width: 200px;
     }
 
     .nav-title {
